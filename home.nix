@@ -2,7 +2,6 @@
 {
   home = {
     packages = with pkgs; [
-      hello
       spotify
     ];
 
@@ -10,5 +9,8 @@
     homeDirectory = "/home/archo";
 
     stateVersion = "25.11";
+  };
+  programs.emacs = {
+  extraConfig = ''(setq standard-indent 2)'';
   };
 }
