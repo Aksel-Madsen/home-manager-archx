@@ -1,0 +1,11 @@
+{
+  lib,
+  pkgs,
+  ...
+}: {
+  enable = true;
+  initContent =
+  ''
+  alias asd = 'asd'
+  '';
+}
