@@ -2,7 +2,15 @@
 
 {
   home.file = {
-    # You can also source an existing file from your nix flake/directory
-    ".config/doom/test.el".source = ./config/test.el;
+    ".config/doom/init.el".source = ./config/init.el;
+  };
+  home.file = {
+    ".config/doom/config.el".source = ./config/config.el;
+  };
+  home.file = {
+    ".config/doom/packages.el".source = ./config/packages.el;
+  };
+  home.file = {
+    ".config/doom/custom.el".source = ./config/custom.el;
   };
 }

@@ -1,7 +1,7 @@
 { lib, pkgs, ... }:
 {
   imports = [
-    ./modules/doom.nix
+    ./modules/doom
   ];
   home = {
     packages = with pkgs; [
