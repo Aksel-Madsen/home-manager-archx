@@ -21,5 +21,6 @@
   };
   programs = {
     zsh = import ./programs/zsh;
+    emacs = import ./programs/emacs;
   };
 }
