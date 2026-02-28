@@ -96,8 +96,7 @@
    (message "Moved '%s' to '%s'" source-path target-path)))
 
 
-;; Force line breaks after TOC when exporting LaTeX
-;; to PDF
+;; Force line breaks after TOC when exporting LaTeX to PDF
 (setq org-latex-toc-command "\\tableofcontents \\clearpage")
 
 (defun my/open-associated-pdf ()
