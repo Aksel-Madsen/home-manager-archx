@@ -100,7 +100,7 @@
 (setq org-latex-toc-command "\\tableofcontents \\clearpage")
 
 (defun my/open-associated-pdf ()
-  "If a PDF with the same base name as the current buffer exists, open it in zathura."
+  "If PDF with same name as the current buffer exists, open it in zathura."
   (interactive)
   (if-let* ((file buffer-file-name)
             (pdf (concat (file-name-sans-extension file) ".pdf")))
