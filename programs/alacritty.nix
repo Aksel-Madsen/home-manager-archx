@@ -1,6 +1,6 @@
 {
   enable = true;
   settings = {
-    font.size = 12.0;
+    font.size = 20.0;
   };
 }

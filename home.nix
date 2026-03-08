@@ -16,6 +16,6 @@
   programs = {
     zsh = import ./programs/zsh;
     emacs = import ./programs/emacs;
-    alacritty = import ./programs/alacritty;
+    alacritty = import ./programs/alacritty.nix;
   };
 }
