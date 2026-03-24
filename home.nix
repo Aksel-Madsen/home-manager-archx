@@ -2,6 +2,7 @@
 {
   imports = [
     ./modules/doom
+    ./modules/hyprland
   ];
   home = {
     packages = with pkgs; [
