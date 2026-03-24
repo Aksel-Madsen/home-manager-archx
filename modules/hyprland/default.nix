@@ -32,6 +32,7 @@
           }
           accel_profile=flat
       }
+      monitor = DP-2, 5120x1440@119.97, 0x0, 1
       $terminal = alacritty
       $launcher = rofi -show drun
       $mainMod = SUPER
