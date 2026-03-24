@@ -17,7 +17,7 @@
       pkgs = import nixpkgs { inherit system; config.allowUnfree = true; };
     in {
       homeConfigurations = {
-        archo = home-manager.lib.homeManagerConfiguration {
+        archie = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           modules = [ ./home.nix ];
         };

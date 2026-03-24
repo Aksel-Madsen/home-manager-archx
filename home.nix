@@ -9,8 +9,8 @@
       spotify
     ];
 
-    username = "archo";
-    homeDirectory = "/home/archo";
+    username = "archie";
+    homeDirectory = "/home/archie";
 
     stateVersion = "25.11";
   };

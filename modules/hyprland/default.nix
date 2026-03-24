@@ -32,6 +32,7 @@
           }
           accel_profile=flat
       }
+      monitor = eDP-1, 2560x1440@60.00Hz, 0x0, 1
       $terminal = alacritty
       $launcher = rofi -show drun
       $mainMod = SUPER
