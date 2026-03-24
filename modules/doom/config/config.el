@@ -109,6 +109,15 @@
         (message "No PDF found: %s" pdf))
     (message "Current buffer is not visiting a file")))
 
+(defun my/compile-cpp-file ()
+  "Simple compilation for .cpp files using clang++"
+  (interactive)
+  (if-let* ((file (buffer-file-name))
+            ((string-equal (file-name-extension file) "cpp"))
+            (out (file-name-sans-extension file)))
+      (start-process "clang-proc" "*clang output*" "clang++" file "-o" out)
+    (message "Not a .cpp file or no file visiting this buffer.")))
+
 ;; Command to list academic books
 (defun my/academic-books ()
   (interactive)
