@@ -25,7 +25,7 @@
       input {
           kb_layout = dk
       
-          sensitivity = 0 # -1.0 - 1.0, 0 means no modification.
+          sensitivity = 0.8 # -1.0 - 1.0, 0 means no modification.
       
           touchpad {
               natural_scroll = false
