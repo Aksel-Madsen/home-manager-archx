@@ -75,6 +75,14 @@
       bind = $mainMod SHIFT,  h,      layoutmsg,  mfact -0.05
       bind = $mainMod SHIFT,  Space,  layoutmsg,  focusmaster
       bind = $mainMod SHIFT,  Space,  layoutmsg,  focusmaster
+      
+      # Laptop multimedia keys for volume and LCD brightness
+      bindel = ,XF86AudioRaiseVolume, exec, wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+
+      bindel = ,XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+      bindel = ,XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+      bindel = ,XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
+      bindel = ,XF86MonBrightnessUp, exec, brightnessctl -e4 -n2 set 5%+
+      bindel = ,XF86MonBrightnessDown, exec, brightnessctl -e4 -n2 set 5%-
       '';
   };
   programs.hyprpanel = {
