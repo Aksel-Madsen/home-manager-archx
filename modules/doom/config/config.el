@@ -141,4 +141,4 @@
       :n "C-c o" #'my/open-associated-pdf
       :n "C-c e" #'org-latex-export-to-pdf)
 
-
+(map! "C-c h" #'treemacs)
