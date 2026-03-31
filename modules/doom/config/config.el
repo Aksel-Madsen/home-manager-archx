@@ -115,7 +115,9 @@
   (if-let* ((file (buffer-file-name))
             ((string-equal (file-name-extension file) "cpp"))
             (out (file-name-sans-extension file)))
-      (start-process "clang-proc" "*clang output*" "clang++" file "-o" out)
+      (compile (format "clang++ %s -o %s" 
+                       (shell-quote-argument file) 
+                       (shell-quote-argument out)))
     (message "Not a .cpp file or no file visiting this buffer.")))
 
 ;; Command to list academic books
