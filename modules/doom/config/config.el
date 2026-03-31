@@ -134,7 +134,8 @@
       :n "C-c d" #'lsp-ui-peek-find-definitions
       :n "C-c m" #'+evil:make
       :n "C-c r" #'lsp-ui-peek-find-references
-      :n "C-c l" #'lsp-ui-imenu)
+      :n "C-c l" #'lsp-ui-imenu
+      :n "C-c c" #'my/compile-cpp-file)
 
 (map! :after org
       :map org-mode-map
