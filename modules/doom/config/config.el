@@ -75,6 +75,10 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
+;; Set editing style for cpp files
+(after! cc-mode
+  (set-cc-style! "gnu"))
+
 (setq scroll-margin '7)
 
 (defun scrot-move (dest-filename)
