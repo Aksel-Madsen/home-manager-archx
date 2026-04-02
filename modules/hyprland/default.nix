@@ -6,6 +6,7 @@
     extraConfig =
       ''
       exec-once = hyprpanel
+      exec-once = wl-paste --watch cliphist store
 
       general {
         layout = master
@@ -33,7 +34,7 @@
       }
       $terminal = alacritty
       $terminal = alacritty
-      $launcher = hyprlauncher
+      $launcher = rofi -show drun
       $mainMod = SUPER
 
       bind = $mainMod,       Q,      killactive
@@ -75,6 +76,10 @@
       bind = $mainMod SHIFT,  h,      layoutmsg,  mfact -0.05
       bind = $mainMod SHIFT,  Space,  layoutmsg,  focusmaster
       bind = $mainMod SHIFT,  Space,  layoutmsg,  focusmaster
+
+      # Clipboard binds
+      bind = $mainMod SHIFT,  s,  exec,  grim -g "$(slurp)" -| wl-copy
+      bind = $mainMod SHIFT,  v,  exec,  cliphist list | rofi -dmenu | cliphist decode | wl-copy
       
       # Laptop multimedia keys for volume and LCD brightness
       bindel = ,XF86AudioRaiseVolume, exec, wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+
