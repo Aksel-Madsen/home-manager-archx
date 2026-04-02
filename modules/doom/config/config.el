@@ -76,8 +76,9 @@
 ;; they are implemented.
 
 ;; Set editing style for cpp files
-(after! cc-mode
-  (c-set-style "gnu"))
+(add-hook 'c++-mode-hook
+          (lambda ()
+            (c-set-style "gnu")))
 
 (setq scroll-margin '7)
 
