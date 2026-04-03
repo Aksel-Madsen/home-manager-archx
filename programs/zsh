@@ -46,6 +46,6 @@
   
   autoload -U colors && colors
   
-  PROMPT="%F{red}[%f%F{red}%~%f%F{red}]%f%B%F{cyan}# %f%b"
+  PROMPT="%F{red}[%f%F{red}%~%f%F{red}]%f%B%F{cyan}"$'\n'"# %f%b"
   '';
 }
