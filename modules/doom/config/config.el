@@ -142,6 +142,7 @@
       :n "C-c m" #'+evil:make
       :n "C-c r" #'lsp-ui-peek-find-references
       :n "C-c l" #'lsp-ui-imenu
+      :n "C-c j" #'lsp-ui-flycheck-list
       :n "C-c c" #'my/compile-cpp-file)
 
 (map! :after org
